@@ -4,16 +4,35 @@
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    
     <style>
-    .maindiv
-    {
-
-    }
+        body {
+              font-family: Arial;
+              background-color: black; 
+              color: white;
+              }
+        h1   {color: grey;
+                font-family: Verdana;
+        }
+       .myDiv
+       {
+           background-color: white;
+           color: black;
+           width: 300px;
+           padding: 20px;
+           border-radius: 25px;
+           margin: 0 auto;
+           
+           
+       } 
     </style>
+
     </head>
     <body>
-
-        <h1>Simple Interest Calculator</h1>
+       <Div class="myDiv" >
+            <h1>Simple Interest Calculator</h1>
+       
+        
 
         Amount <input type="number"  id="principal">  <br></br>
 
@@ -36,10 +55,11 @@
         </select> <br></br>
 <!-- 
         Interest : <span id="result"></span><br> -->
-        <button onclick="compute()">Compute Interest</button><br></br>
-        
+        <button onclick="compute()">Compute Interest</button> <br></br>
+
         <footer>
-             <p>everyone can get rich</p>
+             <p>&#169 Everyone can get rich</p>
         </footer>
+        </Div>
     </body>
 </html>  
