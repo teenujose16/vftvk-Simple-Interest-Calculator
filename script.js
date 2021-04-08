@@ -1,20 +1,19 @@
-function compute()
+function compute(principal, rate, years)
 {
     principal = document.getElementById("principal").value;
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
    
-    interest = document.getElementById("result") ;
+    var interest = document.getElementById("result") ;
     interest.innerHTML = "The interest is " + (principal*rate*years/100);
-     document.getElementById('totalAmount').innerHTML = principal + interest;
-     document.getElementById('totalYears').innerHTML = 2021 + years;
     
+    var totalAmount = principal + interest;
+    var totalYear = 2021 + years
     
-    document.getElementById('p01').style.display = "none";
-	document.getElementById('p02').style.display = "none";
-	document.getElementById('p03').style.display = "none";
-	document.getElementById('p04').style.display = "none";			
-				
+     document.getElementById("p01").innerHTML = "If you deposit " + principal;
+     document.getElementById("p02").innerHTML = "at an interest rate of " + rate;                     
+ 	 document.getElementById("p03").innerHTML = "You will receive an amount of " + totalAmount;		
+	 document.getElementById("p04").innerHTML = "in the year " + totalYear;			
  }
  
  function hidePara()
