@@ -28,7 +28,7 @@
     </style>
 
     </head>
-    <body>
+    <body onload="hidePara()">
        <Div class="myDiv" >
             <h1>Simple Interest Calculator</h1>
        
@@ -36,12 +36,12 @@
 
         Amount <input type="number"  id="principal">  <br></br>
 
-        <form name="myform" oninput="range1value.value = range1.valueAsNumber">
-         Interest Rate <input name="range1" type="range" step="0.25" min="1" max="20" >
-         <output name="range1value" for="range1">10.25</output><span style="color: black;">%</span>  
+        <form name="myform" oninput="range1value.value = rate.valueAsNumber">
+         Interest Rate <input name="rate" type="range" step="0.25" min="1" max="20" >
+         <output name="range1value" for="rate">10.25</output><span style="color: black;">%</span>  
         </form>  <br/><br/>
 
-         No. of years <select name="cars" id="cars">
+         No. of years <select name="years" id="years">
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -56,7 +56,12 @@
 <!-- 
         Interest : <span id="result"></span><br> -->
         <button onclick="compute()">Compute Interest</button> <br></br>
-
+		
+            <p id="p01">If you deposit <span style="color:yellow">principal</span></p>
+			<p id="p02">at an interest rate of <span style="color:yellow">rate</span></p>
+			<p id="p03">You will receive an amount of <span style="color:yellow"><DIV  ID="totalAmout"></DIV></span></p>
+			<p id="p04">in the year <span style="color:yellow"><DIV  ID="totalYears"></DIV></span></p>
+			
         <footer>
              <p>&#169 Everyone can get rich</p>
         </footer>
