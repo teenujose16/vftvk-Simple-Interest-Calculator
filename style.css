@@ -1,11 +1,15 @@
+/* set body design */
+
 body {
               font-family: Arial;
               background-color: black; 
               color: white;
               }
+              /* set heading  design */
         h1   {color: grey;
                 font-family: Verdana;
         }
+        /* set design for whole prtion */
        .myDiv
        {
            background-color: white;
