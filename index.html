@@ -7,6 +7,7 @@
     <!-- Link css and javascript file here -->
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Web App – Simple Interest Calculator</title>
  </head>
 
    <body onload="hideDetails()">
@@ -47,7 +48,7 @@
          
         <!-- Clicking compute button goes to function Compute in javascript -->   
       <button id="next" onclick="compute(this.principal, this.rate, this.years);">Compute Interest</button>
-      
+        <span id="result"></span>
          <!-- Printing output using div tag -->
     <div id="divContainer">
          
